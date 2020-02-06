@@ -1,0 +1,3 @@
+docker run -p 8080:8080 --network=selenium springcommunity/spring-framework-petclinic
+
+docker run -p 8080:8080 --name=petclinic springcommunity/spring-framework-petclinic

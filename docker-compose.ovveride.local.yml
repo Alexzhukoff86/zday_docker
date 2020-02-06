@@ -1,0 +1,7 @@
+version: '3.5'
+services:
+  test_app:
+    env_file:
+      - deploy/.env.local
+    networks:
+      - selenium

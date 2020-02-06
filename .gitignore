@@ -1,0 +1,7 @@
+/.idea/
+/src/__pycache__/
+*/__pycache__/
+*.pyc
+/venv/
+/deploy/.env.local
+/deploy/.env.prod
