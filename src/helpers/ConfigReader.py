@@ -8,5 +8,5 @@ class ConfigReader:
 
     @staticmethod
     def get_petclinic_configs():
-        URL = "http://172.25.0.5:8080/"
+        URL = "http://petclinic_demo:8080/"
         return URL

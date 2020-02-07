@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  petclinic:
+    container_name: petclinic_demo
+    image: springcommunity/spring-framework-petclinic
+    networks:
+      - selenium_grid
+    ports:
+    - "8080:8080"

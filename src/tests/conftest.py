@@ -13,10 +13,12 @@ def browser():
     try:
         driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub', desired_capabilities=capabilities)
         driver.delete_all_cookies()
+        driver.maximize_window()
     except Exception as error:
         print(error)
     yield driver
     driver.quit()
+
 
 @pytest.fixture(scope="session")
 def petclinic(browser):

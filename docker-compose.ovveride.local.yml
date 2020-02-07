@@ -4,4 +4,4 @@ services:
     env_file:
       - deploy/.env.local
     networks:
-      - selenium
+      - selenium_grid

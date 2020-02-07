@@ -10,6 +10,8 @@ services:
       HUB_HOST: hub
     networks:
       - selenium_grid
+    ports:
+      - "32769:5900"
 
   chrome:
     image: selenium/node-chrome-debug
