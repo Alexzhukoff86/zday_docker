@@ -1,4 +1,3 @@
-from src.helpers.ConfigReader import ConfigReader
 from src.ui.webelements.Button import Button
 from src.ui.webpages.BasePage import BasePage
 

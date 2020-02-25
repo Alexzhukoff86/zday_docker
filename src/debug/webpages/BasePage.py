@@ -1,4 +1,4 @@
-from src.helpers.ConfigReader import ConfigReader
+from src.debug.helpers import ConfigReader
 
 
 class BasePage:

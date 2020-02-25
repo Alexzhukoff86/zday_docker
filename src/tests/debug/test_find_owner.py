@@ -1,6 +1,6 @@
 from time import sleep
 
-from src.core.Petclinic import Petclinic
+from src.debug.core import Petclinic
 
 
 def test_find_owner(petclinic: Petclinic):

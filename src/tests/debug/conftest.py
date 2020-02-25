@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 
-from src.core.Petclinic import Petclinic
+from src.debug.core import Petclinic
 
 
 @pytest.fixture(scope="session")
