@@ -1,12 +1,26 @@
 version: '3.5'
 services:
-  test_app:
-    container_name: test_app
-    image: test_app
-    build:
-      context: .
-      dockerfile: deploy/Dockerfile
+  firefox:
+    image: selenium/node-firefox
     volumes:
-    - ./:/app
-    tty: true
-    stdin_open: true
+      - /dev/shm:/dev/shm
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+
+  chrome:
+    image: selenium/node-chrome-debug
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+    ports:
+      - "32768:5900"
+
+  hub:
+    image: selenium/hub
+    ports:
+      - "4444:4444"

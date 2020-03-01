@@ -1,15 +1,13 @@
 version: '3.5'
 services:
   firefox:
-    image: selenium/node-firefox-debug
+    image: selenium/node-firefox
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
       - hub
     environment:
       HUB_HOST: hub
-    ports:
-      - "32769:5900"
 
   chrome:
     image: selenium/node-chrome-debug

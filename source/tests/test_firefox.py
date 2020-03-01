@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-from src.pages.MainPage import MainPage
+from source.pages.MainPage import MainPage
 
 
 def test_firefox():
@@ -12,5 +12,6 @@ def test_firefox():
 
     main_page = MainPage(firefox)
     main_page.open().click_with_us_button()
+    #firefox.get_screenshot_as_file('screenshot_firefox.png')
 
     firefox.quit()

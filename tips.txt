@@ -2,6 +2,8 @@ docker-compose up -d
 
 docker-compose scale chrome=5
 
+docker exec -ti zday_docker_test_app_1 pytest source/tests/test_docker_chrome.py
+
 
 
 
