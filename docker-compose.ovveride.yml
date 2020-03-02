@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    tty: true
     volumes:
       - ./:/app
-    tty: true
     stdin_open: true
