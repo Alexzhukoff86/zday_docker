@@ -14,7 +14,7 @@ def test_chrome():
 
     main_page = MainPage(chrome)
     main_page.open().click_with_us_button()
-    #chrome.get_screenshot_as_file('screenshot_chrome.png')
+    chrome.get_screenshot_as_file('screenshot_chrome.png')
     sleep(2)
 
     chrome.close()

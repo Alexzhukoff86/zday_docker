@@ -18,7 +18,7 @@ services:
     environment:
       HUB_HOST: hub
     ports:
-      - "32768:5900"
+      - "5900:5900"
 
   hub:
     image: selenium/hub

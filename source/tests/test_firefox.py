@@ -12,6 +12,6 @@ def test_firefox():
 
     main_page = MainPage(firefox)
     main_page.open().click_with_us_button()
-    #firefox.get_screenshot_as_file('screenshot_firefox.png')
+    firefox.get_screenshot_as_file('screenshot_firefox.png')
 
     firefox.quit()
